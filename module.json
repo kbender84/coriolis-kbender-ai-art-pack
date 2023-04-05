@@ -14,20 +14,9 @@
     "verified": "10",
     "maximum": "10"
   },
-  "esmodules": [
-
-    ],
-
-  "styles": [
-
-  ],
-    "languages": [
-	],
-    "relationships": {
-
-  },
   "url": "https://github.com/kbender84/coriolis-kbender-ai-art-pack",
   "manifest": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/1/module.json",
-  "download": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/1/coriolis-kbender-ui.zip"
+  "download": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/1/coriolis-kbender-ai-art-pack.zip"
+  
 
 }
