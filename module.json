@@ -15,8 +15,7 @@
 
   "compatibility": {
     "minimum": "10",
-    "verified": "10",
-    "maximum": "10"
+    "verified": "10"
   },
   "url": "https://github.com/kbender84/coriolis-kbender-ai-art-pack",
   "manifest": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/1/module.json",
