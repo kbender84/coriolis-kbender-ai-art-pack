@@ -16,4 +16,5 @@ If you'd like to see my other projects, or would like to support me, please visi
 2.0 Added images and macros to fill in the Coriolis Core rules
 This update works best if you are using Foundry VTT Coriolis Core rules module from Free Legue.
 It replaces the default actors images and tokens with new ones.
-Details how to use it are available in the video: https://youtu.be/avKz-qB8ZjA
+Details how to use it are available in the video: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/avKz-qB8ZjA?si=8MqA8NZRxBWiCE-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
