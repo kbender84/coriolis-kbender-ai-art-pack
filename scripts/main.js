@@ -147,4 +147,49 @@ getHumanitePortrait(concept){
   return{portrait: vportrait , token: vtoken };
 
     }
+
+    getSemiIntelligencePortrait(concept){
+      var vportrait = 'modules/coriolis-kbender-ai-art-pack/adventures/Coriolis-main-rulebook/semi-intelligence_skavara_01.webp';
+      var vtoken = 'modules/coriolis-kbender-ai-art-pack/adventures/Coriolis-main-rulebook/semi-intelligence_skavara_token_01.webp';
+      var inputfile = FILE_LIST;
+      var vconcept = concept;
+  
+  // get random filename from list for given concept
+      inputfile= inputfile.filter(word => word.includes('semi-intelligence') );
+      var filteredfilewithtoken = inputfile.filter(word => word.includes(vconcept) );
+      var filteredfile = filteredfilewithtoken.filter(word => !word.includes('token') );
+  
+  // if there is nothing to fulfill concept, get random concept
+      if (filteredfile[0] === undefined) {
+      const conceptlist = ['skavara'];
+      vconcept = conceptlist[Math.floor(Math.random()*conceptlist.length)];
+      var filteredfilewithtoken = inputfile.filter(word => word.includes(vconcept ) );
+      var filteredfile = filteredfilewithtoken.filter(word => !word.includes('token') );
+      }
+  
+  // select potrait
+     vportrait  = filteredfile[Math.floor(Math.random()*filteredfile.length)];
+  
+  
+  // check if token exists in file list, if not, pass portrait
+     var vportraitfilter= vportrait.substring(0, vportrait.length-5);
+     filteredfile = filteredfilewithtoken.filter(word => word.includes(vportraitfilter) );
+    console.log(filteredfile);
+     filteredfile = filteredfile.filter(word => word.includes('token') );
+     
+    if (filteredfile[0] === undefined) {
+        vtoken = 'modules/coriolis-kbender-ai-art-pack/adventures/Coriolis-main-rulebook/'+ vportrait  ;
+    }
+    else
+    {
+      vtoken = 'modules/coriolis-kbender-ai-art-pack/adventures/Coriolis-main-rulebook/'+ filteredfile[0] ;
+    }
+  
+  //build portrait file path
+    vportrait  = 'modules/coriolis-kbender-ai-art-pack/adventures/Coriolis-main-rulebook/'+ vportrait  ;    console.log(vportrait );
+    console.log(vtoken  );
+    return{portrait: vportrait , token: vtoken };
+  
+      }
+
 }
