@@ -14,3 +14,6 @@ If you'd like to see my other projects, or would like to support me, please visi
 ![Algebra_of_the_icons_cover_name](https://github.com/kbender84/coriolis-kbender-ai-art-pack/assets/66570321/800e8c7b-3cf7-4f09-ae8f-d9188e263550)
 
 2.0 Added images and macros to fill in the Coriolis Core rules
+This update works best if you are using Foundry VTT Coriolis Core rules module from Free Legue.
+It replaces the default actors images and tokens with new ones.
+Details how to use it are available in the video: https://youtu.be/avKz-qB8ZjA
