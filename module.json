@@ -2,7 +2,7 @@
   "name": "coriolis-kbender-ai-art-pack",
   "title": "Coriolis AI art pack by kbender",
   "description": "Alternative character tokens and portraits created for Coriolis RPG (but not system dependant)",
-  "version": "2.0.6",
+  "version": "2.0.5",
   "authors": [
     {
       "name": "benderworks",
@@ -15,45 +15,60 @@
   "compatibility": {
     "minimum": "10",
     "verified": "11"
-  },  "packs": [
+  },  
+    "relationships": {
+    "systems": [{
+      "id": "yzecoriolis",
+      "type": "system",
+      "manifest": "https://github.com/winks-vtt/yze-coriolis/releases/latest/download/system.json",
+      "compatibility": {
+        "verified": "3.0.5"
+      }
+    }]
+  },
+  "packs": [
     {
-      "name": "Coriolis Ai Art Pack Macros",
-      "label": "coriolis-ai-art-pack-macros",
+      "name": "coriolis-ai-art-pack-macros",
+      "label": "Coriolis Ai Art Pack Macros",
       "path": "packs/Coriolis-Ai-Art-Pack-Macros",
       "type": "Macro",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "flags": {}
+      "flags": {},
+    "module": "coriolis-kbender-ai-art-pack"
     },
     {
-      "name": "Coriolis Ai Art Pack Scenes",
-      "label": "coriolis-ai-art-pack-scenes",
-      "path": "packs/coriolis-ai-art-pack-scenes",
-      "type": "Scene",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "Coriolis Ai Art Pack Actors",
-      "label": "coriolis-ai-art-pack-actors",
+      "name": "coriolis-ai-art-pack-actors",
+      "label": "Coriolis Ai Art Pack Actors",
       "path": "packs/coriolis-ai-art-pack-actors",
       "type": "Actor",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "flags": {}
+      "system": "yzecoriolis",
+      "flags": {},
+      "module": "coriolis-kbender-ai-art-pack"
+    },
+    {
+      "name": "coriolis-ai-art-pack-scenes",
+      "label": "Coriolis Ai Art Pack Scenes",
+      "path": "packs/coriolis-ai-art-pack-scenes",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "yzecoriolis",
+      "flags": {},
+      "module": "coriolis-kbender-ai-art-pack"
     }
-
   ],
   "url": "https://github.com/kbender84/coriolis-kbender-ai-art-pack",
-  "manifest": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/2.0.6/module.json",
-  "download": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/2.0.6/coriolis-kbender-ai-art-pack.zip"
+  "manifest": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/2.0.5/module.json",
+  "download": "https://github.com/kbender84/coriolis-kbender-ai-art-pack/releases/download/2.0.5/coriolis-kbender-ai-art-pack.zip"
   
 
 }
