@@ -41,4 +41,10 @@ Added adventures/emissary_lost_the_abyss - scenes, one map and character images
 Added adventures/emissary_lost_lost_in_the_joungle - scenes, one map and character images
 
 2.1.10
-Testing v 13 foundry compability
+Testing v 13 foundry compability - works fine
+
+2.1.11
+Added Emissary lost on the brink (aka Baybasin blues) to adventures/emissary_lost_lost_in_the_joungle folder. New image names start with on_the_brink_ prefix.
+
+2.1.12
+Updated ai art pack compendium for scenes
